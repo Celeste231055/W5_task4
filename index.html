@@ -10,15 +10,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap" rel="stylesheet">
+    
     <!--Internal Sources-->
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
     
+    <!-- opacity: 0; works from 0-1 
+        svg images in html... svg's: icons
+        html images always in container
+        html image = content or text --- so text-align: center
+        html image change width never height
+    -->
+    
     <nav>
         <div class="logo">
-            <h3>Logo Here</h3>
+            <h3>NetPics</h3>
         </div>
         <div class="nav-con">
             <ul>
@@ -32,10 +44,12 @@
     </nav>
     
     <header>
-        <h3>It's A Strange World Out There...</h3>
-        <h1>STRANGER THINGS: <i>SEASON 17</i></h1>
-        <p>Just as you thought we couldn't milk this franchise any longer, we are here to beat the dead horse! <br> Follow our Middle-aged Pre-teens as they work low incomes jobs, pay taxes, and wash te dishes... <strong>IN THE UPSIDE DOWN!</strong></p>
-        <div class="line-btn">Watch Here on Netpics!</div>
+        <div class="overlay">
+            <h3>It's A Strange World Out There...</h3>
+            <h1>STRANGER THINGS: <i>SEASON 17</i></h1>
+            <p>Just as you thought we couldn't milk this franchise any longer, we are here to beat the dead horse! <br> Follow our Middle-aged Pre-teens as they work low incomes jobs, pay taxes, and wash te dishes... <strong>IN THE UPSIDE DOWN!</strong></p>
+            <div class="line-btn inverted">Watch Here on Netpics!</div>
+        </div>
     </header>
     
     <div class="container-fluid">
@@ -71,7 +85,7 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <div class="small-circle"></div> 
+                <div class="small-circle eleven"></div> 
                 <div class="profile">
                     <p><strong>Eleven</strong></p>
                     <p>Working as a mid level financial manager at the local NFT investment bank, Eleven struggles to convince her elderly patrons to spend their life savings in purchasing the latest Board Ape Yacht Club NFT's</p>
@@ -79,7 +93,7 @@
                 </div>
             </div> 
             <div class="col-3">
-                <div class="small-circle"></div> 
+                <div class="small-circle mike"></div> 
                 <div class="profile">
                     <p><strong>Mike Wheeler</strong></p>
                     <p>Trapped in a loveless marriage with Eleven, Mike purchases a vintage harley davidson motorcycle in hopes that the rest of the gang will think he's cool... Will this vapid attempt at happiness pay off? Probably not!</p>
@@ -87,7 +101,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="small-circle"></div> 
+                <div class="small-circle dustin"></div> 
                 <div class="profile">
                     <p><strong>Dustin Henderson</strong></p>
                     <p>Struggling with crippling debt due to his Board Game addiction, Dustin attempts to create his own board game called The Downside Up, only to face legal backlash from Dungeons and Dragons, as the clear knockoff fools no-one!</p>
@@ -96,7 +110,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="small-circle"></div> 
+                <div class="small-circle eddie"></div> 
                 <div class="profile">
                     <p><strong>Eddie Munson</strong></p>
                     <p>Dead since season 4, Eddie returns as a Zombie! But the undead life is more than dull, as he is forced to create new BAYC Nft's in Eleven's basement... No matter how hard he tries to escape, he even death (again) can save him now!</p>
@@ -110,7 +124,7 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                    <div class="empty-block"></div>
+                        <iframe style="margin-top: 40px; border-radius: 5px;" width="500" height="300" src="https://www.youtube.com/embed/QwldwzlZCIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="flick-picks">
                         <h3>Fast & Furious: Dementia Unleashed</h3>
                         <p>Vin Diesel reprises his role has Dominic Toretto in the 27th installment of the Fast & Furious franchise ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias sequi, odit animi quidem blanditiis? Dolorum explicabo ad eveniet at corporis incidunt exercitationem provident repellat quibusdam, repudiandae earum et impedit.</p>
@@ -118,7 +132,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="empty-block"></div>
+                    <iframe style="margin-top: 40px; border-radius: 5px;" width="500" height="300" src="https://www.youtube.com/embed/6XSEi1jTR58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <div class="flick-picks">
                         <h3>Hannah vs Bieber: Has-been Showdown</h3>
                         <p>It's the battle of the Has-beens... One Night... One Fight... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias sequi, odit animi quidem blanditiis? Dolorum explicabo ad eveniet at corporis incidunt exercitationem provident repellat quibusdam, repudiandae earum et impedit.</p>
@@ -133,7 +147,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="empty-block mid"></div>
+                    <iframe style="margin-left: 270px; border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13876.41094155278!2d21.594345220650887!3d-29.60069960541965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c263b3dab57facd%3A0x2edbf9650cdabad8!2sJohnniesluck!5e0!3m2!1sen!2sza!4v1679425845456!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--Why couldn't it be Celestesluck?-->
                 </div>
             </div>
         </div>    
@@ -141,6 +156,12 @@
 
     <footer>
         <p>Thanks for joining us here at Dinsey... Oops, we means Netpics!</p>
+        <div class="icon">
+            <img src="assets/social-01.svg" alt="youtube icon">
+            <img src="assets/social-02.svg" alt="facebook icon">
+            <img src="assets/social-03.svg" alt="twitter icon">
+            <img src="assets/social-04.svg" alt="instagram icon">
+        </div>
     </footer>
 </body>
 </html>
